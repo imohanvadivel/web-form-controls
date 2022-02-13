@@ -1,6 +1,5 @@
 {
   "name": "web-form-controls",
-  "version": "1.0.0",
   "description": "Native web form controls",
   "license": "MIT",
   "author": "Mohan Vadivel <https://mohanvadivel.com>",
@@ -16,8 +15,10 @@
     "build": "esbuild src/style.css src/script.js --bundle --minify --outdir=./"
   },
   "dependencies": {
-    "esbuild": "^0.14.21",
     "grilles": "^1.0.2",
     "prismjs": "^1.26.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.21"
   }
 }
