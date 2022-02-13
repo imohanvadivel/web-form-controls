@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Native web form controls"
+    />
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+    <title>From Controls</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="language-html">
+    <main class="grid" columns="8">
+      <header span="row">
+        <h1>Native Web Form Controls</h1>
+        <p class="desc">
+          This webpage documents all native HTML5 elements. Their support has
+          improved in recent years, yet not all browsers support all the
+          features. You can open this page in various browsers on a mobile,
+          tablet, desktop, car, or whatever device you use to consume the web
+          and you can view how the browser renders the element and its
+          experience.
+        </p>
+        <div class="flex-h center">
+          <a
+            class="github plain"
+            target="_blank"
+            href="https://github.com/imohanvadivel/NativeWeb-FromControls"
+          >
+            <svg
+              class="h-1 w-1"
+              viewBox="0 0 20 20"
+              width="20"
+              height="20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10 1.24999C7.92268 1.25027 5.91321 1.9896 4.33106 3.33574C2.74891 4.68187 1.69729 6.54699 1.36432 8.59745C1.03134 10.6479 1.43874 12.75 2.51362 14.5276C3.58851 16.3052 5.26076 17.6424 7.23125 18.3C7.66875 18.3812 7.85625 18.1125 7.85625 17.8812C7.85625 17.65 7.85625 17.125 7.85625 16.3937C5.425 16.9187 4.9125 15.2187 4.9125 15.2187C4.74153 14.683 4.3817 14.2277 3.9 13.9375C3.10625 13.4 3.9625 13.4062 3.9625 13.4062C4.23975 13.4454 4.50439 13.5474 4.7362 13.7045C4.968 13.8615 5.16085 14.0695 5.3 14.3125C5.54209 14.7467 5.94671 15.067 6.4249 15.2029C6.90308 15.3389 7.41569 15.2794 7.85 15.0375C7.88529 14.594 8.08079 14.1786 8.4 13.8687C6.4625 13.6437 4.41875 12.8937 4.41875 9.54374C4.40458 8.67368 4.72702 7.83176 5.31875 7.19374C5.05091 6.44011 5.08223 5.61247 5.40625 4.88124C5.40625 4.88124 6.1375 4.64374 7.8125 5.77499C9.24467 5.38433 10.7553 5.38433 12.1875 5.77499C13.8563 4.64374 14.5875 4.88124 14.5875 4.88124C14.9115 5.61247 14.9428 6.44011 14.675 7.19374C15.2667 7.83176 15.5892 8.67368 15.575 9.54374C15.575 12.9062 13.5313 13.6437 11.5813 13.8625C11.7901 14.0742 11.9512 14.3283 12.0536 14.6075C12.1561 14.8867 12.1974 15.1847 12.175 15.4812C12.175 16.65 12.175 17.5937 12.175 17.8812C12.175 18.1687 12.3313 18.3875 12.8 18.3C14.7731 17.6416 16.4471 16.3018 17.5218 14.5209C18.5965 12.74 19.0016 10.6345 18.6646 8.58198C18.3275 6.52944 17.2703 4.6641 15.6824 3.32047C14.0946 1.97684 12.08 1.24281 10 1.24999V1.24999Z"
+                fill="var(--foregroundColor)"
+              />
+            </svg>
+          </a>
+          <a id="darkMode-toggle" class="plain" href="javascript:void(0)">
+            <svg
+              class="h-1 w-1"
+              viewBox="0 0 20 20"
+              width="22"
+              height="22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.625 1.25H9.375V3.125H10.625V1.25Z"
+                fill="var(--foregroundColor)"
+              />
+              <path
+                d="M18.75 9.375H16.875V10.625H18.75V9.375Z"
+                fill="var(--foregroundColor)"
+              />
+              <path
+                d="M10.625 16.875H9.375V18.75H10.625V16.875Z"
+                fill="var(--foregroundColor)"
+              />
+              <path
+                d="M3.125 9.375H1.25V10.625H3.125V9.375Z"
+                fill="var(--foregroundColor)"
+              />
+              <path
+                d="M4.29013 3.41836L3.40625 4.30225L4.73208 5.62807L5.61596 4.74419L4.29013 3.41836Z"
+                fill="var(--foregroundColor)"
+              />
+              <path
+                d="M15.7006 3.41221L14.3748 4.73804L15.2586 5.62192L16.5845 4.2961L15.7006 3.41221Z"
+                fill="var(--foregroundColor)"
+              />
+              <path
+                d="M15.2603 14.3764L14.3765 15.2603L15.7023 16.5861L16.5862 15.7022L15.2603 14.3764Z"
+                fill="var(--foregroundColor)"
+              />
+              <path
+                d="M3.4187 15.7062L4.7437 14.375L5.62495 15.2625L4.29995 16.5875L3.4187 15.7062Z"
+                fill="var(--foregroundColor)"
+              />
+              <path
+                d="M10 5C9.0111 5 8.0444 5.29324 7.22215 5.84265C6.39991 6.39206 5.75904 7.17295 5.3806 8.08658C5.00217 9.00021 4.90315 10.0055 5.09608 10.9755C5.289 11.9454 5.76521 12.8363 6.46447 13.5355C7.16373 14.2348 8.05465 14.711 9.02455 14.9039C9.99446 15.0969 10.9998 14.9978 11.9134 14.6194C12.8271 14.241 13.6079 13.6001 14.1574 12.7779C14.7068 11.9556 15 10.9889 15 10C15 8.67392 14.4732 7.40215 13.5355 6.46447C12.5979 5.52678 11.3261 5 10 5ZM10 13.75C9.00544 13.75 8.05161 13.3549 7.34835 12.6517C6.64509 11.9484 6.25 10.9946 6.25 10C6.25 9.00544 6.64509 8.05161 7.34835 7.34835C8.05161 6.64509 9.00544 6.25 10 6.25V13.75Z"
+                fill="var(--foregroundColor)"
+              />
+            </svg>
+          </a>
+        </div>
+      </header>
+      <div class="h-3" span="row">&nbsp;</div>
+
+      <!-- Button ------------------------ -->
+      <h5>Button</h5>
+      <div class="el">
+        <button>Button</button>
+      </div>
+      <pre><code>&lt;button&gt;Button&lt;/button&gt;</code></pre>
+
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Progress ------------------------ -->
+      <h5>Progress</h5>
+      <div class="el">
+        <progress max="100" value="69">69%</progress>
+      </div>
+      <pre class="no-min-height prog language-none">
+<code>&lt;progress max="100" value="69"&gt;69%&lt;/progress&gt;</code></pre>
+
+      <div class="el"><progress></progress></div>
+      <pre><code>&lt;progress&gt;&lt;/progress&gt;</code></pre>
+
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Meter ------------------------ -->
+      <h5>Meter</h5>
+      <div class="el">
+        <meter
+          min="0"
+          max="1024"
+          low="200"
+          high="800"
+          optimum="400"
+          value="350"
+        >
+          at 350/1024
+        </meter>
+      </div>
+      <pre class="metpre language-none">
+<code>&lt;meter min="0" max="1024" low="200" high="800" optimum="400" value="350"&gt;
+  at 350/1024
+&lt;/meter&gt;</code></pre>
+
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Select ------------------------ -->
+      <h5>Select</h5>
+      <div class="el">
+        <!-- <label for="planet">Choose a planet:</label> -->
+
+        <select>
+          <option value="">-- Select --</option>
+          <option value="1">Mercury</option>
+          <option value="2">Venus</option>
+          <option value="3">Earth</option>
+        </select>
+      </div>
+      <pre>
+<code>&lt;select&gt;
+  &lt;option value=""&gt;-- Select --&lt;/option&gt;
+  &lt;option value="1">Mercury&lt;/option&gt;
+  &lt;option value="2">Venus&lt;/option&gt;
+  &lt;option value="3">Earth&lt;/option&gt;
+&lt;/select&gt;</code>
+</pre>
+
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Optgroup ------------------------ -->
+      <h5>Optgroup</h5>
+      <div class="el">
+        <!-- <label for="gaints">Choose a Gaint:</label> -->
+        <select>
+          <optgroup label="Gas Giants">
+            <option>Jupiter</option>
+            <option>Saturn</option>
+          </optgroup>
+          <optgroup label="Ice Giants">
+            <option>Uranus</option>
+            <option>Neptune</option>
+          </optgroup>
+        </select>
+      </div>
+      <pre><code>&lt;select&gt;
+  &lt;optgroup label="Gas Giants"&gt;
+    &lt;option&gt;Jupiter&lt;/option&gt;
+    &lt;option&gt;Saturn&lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label="Ice Giants"&gt;
+    &lt;option&gt;Uranus&lt;/option&gt;
+    &lt;option&gt;Neptune&lt;/option&gt;
+  &lt;/optgroup&gt;
+&lt;/select&gt;
+</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- FieldSet ------------------------ -->
+      <h5>Fieldset</h5>
+      <div class="el">
+        <fieldset>
+          <legend>Choose your favorite constellation</legend>
+          <input type="radio" id="orion" name="const" />
+          <label for="orion">Orion</label><br />
+          <input type="radio" id="dipper" name="const" />
+          <label for="dipper">Dipper</label><br />
+          <input type="radio" id="virgo" name="const" />
+          <label for="virgo">Virgo</label>
+        </fieldset>
+      </div>
+      <pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;Choose your favorite constellation&lt;/legend&gt;
+  &lt;input type="radio" id="orion" name="const" /&gt;
+  &lt;label for="orion"&gt;Orion&lt;/label&gt; &lt;br/&gt;
+  &lt;input type="radio" id="dipper" name="const" /&gt;
+  &lt;label for="dipper"&gt;Dipper&lt;/label&gt; &lt;br/&gt;
+  &lt;input type="radio" id="virgo" name="const" /&gt;
+  &lt;label for="virgo"&gt;Virgo&lt;/label&gt;
+&lt;/fieldset&gt;</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Textarea ------------------------ -->
+      <h5>Textarea</h5>
+
+      <div class="el">
+        <textarea></textarea>
+      </div>
+      <pre
+        class="no-min-height"
+      ><code>&lt;textarea&gt;&lt;/textarea&gt;</code></pre>
+
+      <div class="el">
+        <textarea rows="1" cols="25"></textarea>
+      </div>
+      <pre><code>&lt;textarea rows="1" cols="25"&gt;&lt;/textarea&gt;</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Inputs ================================ -->
+      <header span="row">
+        <h3>Input Element</h3>
+        <hr />
+      </header>
+
+      <!-- Checkbox ------------------------ -->
+      <h5>Checkbox</h5>
+      <div class="el">
+        <div>
+          <input type="checkbox" id="uc" />
+          <label for="uc">Unchecked</label>
+        </div>
+        <div>
+          <input type="checkbox" id="cs" checked />
+          <label for="cs">Checked</label>
+        </div>
+      </div>
+      <pre><code>&lt;div&gt;
+  &lt;input type="checkbox" id="uc" /&gt;
+  &lt;label for="uc"&gt;Unchecked&lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;input type="checkbox" id="cs" checked /&gt;
+  &lt;label for="cs"&gt;Checked&lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Radio ------------------------ -->
+      <h5>Radio</h5>
+      <div class="el">
+        <div>
+          <input type="radio" id="Curiosity" name="rover" checked />
+          <label for="Curiosity">Curiosity</label>
+        </div>
+
+        <div>
+          <input type="radio" id="Perseverance" name="rover" />
+          <label for="Perseverance">Perseverance</label>
+        </div>
+      </div>
+      <pre><code>&lt;div&gt;
+  &lt;input type="radio" id="Curiosity" name="rover" checked /&gt;
+  &lt;label&gt;Curiosity&lt;/label&gt;
+&lt;/div&gt;
+  
+&lt;div&gt;
+  &lt;input type="radio" id="Perseverance" name="rover" /&gt;
+  &lt;label&gt;Perseverance&lt;/label&gt;
+&lt;/div&gt;</code>
+</pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Range ------------------------ -->
+      <h5>Range</h5>
+
+      <div class="el range">
+        <input type="range" />
+        <output class="val"></output>
+      </div>
+      <pre class="no-min-height"><code>&lt;input type="range" /&gt;</code></pre>
+
+      <div class="el range">
+        <input type="range" step="0.005" />
+        <output class="val"></output>
+      </div>
+      <pre
+        class="no-min-height"
+      ><code>&lt;input type="range" step="0.005" /&gt;</code></pre>
+
+      <div class="el range">
+        <input type="range" min="-50" max="50" value="-20" />
+        <output class="val"></output>
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="range" min="-50" max="50" value="-20" /&gt;</code></pre>
+
+      <div class="el range">
+        <input type="range" list="data-range" value="80" />
+        <output class="val"></output>
+        <datalist id="data-range">
+          <option value="20"></option>
+          <option value="40"></option>
+          <option value="60"></option>
+          <option value="80"></option>
+        </datalist>
+      </div>
+
+      <pre>
+<code>&lt;input type="range" list="data-range" value="80" /&gt;
+&lt;datalist id="data-range"&gt;
+  &lt;option value="20"&gt;&lt;/option&gt;
+  &lt;option value="40"&gt;&lt;/option&gt;
+  &lt;option value="60"&gt;&lt;/option&gt;
+  &lt;option value="80"&gt;&lt;/option&gt;
+&lt;/datalist&gt;</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- File ------------------------ -->
+      <h5>File</h5>
+
+      <div class="el">
+        <input type="file" />
+      </div>
+      <pre class="no-min-height"><code>&lt;input type="file" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="file" accept=".png,.jpeg,.jpg,.tiff,.gif" />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="file" accept=".png,.jpeg,.jpg,.tiff,.gif" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="file" accept="audio/*" multiple />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="file" accept="audio/*" multiple /&gt;</code></pre>
+
+      <div class="el">
+        <input type="file" accept="image/*" capture />
+      </div>
+      <pre><code>&lt;input type="file" accept="image/*" capture /&gt;</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Color ------------------------ -->
+      <h5>Color</h5>
+
+      <div class="el">
+        <input type="color" />
+      </div>
+      <pre class="no-min-height"><code>&lt;input type="color" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="color" value="#12c05b" />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="color" value="#12c05b" /&gt;</code></pre>
+
+      <div class="el"><input type="color" list="color" /></div>
+      <datalist id="color">
+        <option value="#173f5f"></option>
+        <option value="#20639b"></option>
+        <option value="#3caea3"></option>
+        <option value="#f6d55c"></option>
+        <option value="#ed553b"></option>
+      </datalist>
+
+      <pre>
+<code>&lt;div class="el"&gt;&lt;input type="color" list="color" /&gt;&lt;/div&gt;
+&lt;datalist id="color"&gt;
+  &lt;option value="#173f5f"&gt;&lt;/option&gt;
+  &lt;option value="#20639b"&gt;&lt;/option&gt;
+  &lt;option value="#3caea3"&gt;&lt;/option&gt;
+  &lt;option value="#f6d55c"&gt;&lt;/option&gt;
+  &lt;option value="#ed553b"&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Text ------------------------ -->
+      <h5>Text</h5>
+
+      <div class="el"><input type="text" /></div>
+      <pre class="no-min-height"><code>&lt;input type="text" /&gt;</code></pre>
+
+      <div class="el disabled">
+        <input type="text" value="disabled" disabled />
+      </div>
+      <pre class="no-min-height disabled">
+<code>&lt;input type="text" value="disabled" disabled /&gt;</code></pre>
+
+      <div class="el">
+        <input type="text" spellcheck="false" placeholder="placeholder" />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="text" spellcheck="false" placeholder="placeholder" /&gt;</code>
+
+<i class="opacity4">By default spellcheck is enabled</i>
+</pre>
+
+      <div class="el"><input type="text" size="3" /></div>
+      <pre
+        class="no-min-height"
+      ><code>&lt;input type="text" size="3" /&gt;</code></pre>
+
+      <div class="el"><input type="text" autocorrect="true" /></div>
+      <pre class="no-min-height">
+<code>&lt;input type="text" autocorrect="true" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="text" list="rocket" />
+        <datalist id="rocket">
+          <option value="Saturn V"></option>
+          <option value="Delta IV Heavy"></option>
+          <option value="Falcon Heavy"></option>
+          <option value="Starship"></option>
+        </datalist>
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="text" list="rocket" /&gt;
+&lt;datalist id="rocket"&gt;
+  &lt;option value="Saturn V"&gt;&lt;/option&gt;
+  &lt;option value="Delta IV Heavy"&gt;&lt;/option&gt;
+  &lt;option value="Falcon Heavy"&gt;&lt;/option&gt;
+  &lt;option value="Starship"&gt;&lt;/option&gt;
+&lt;/datalist&gt;</code></pre>
+
+      <div class="el">
+        <form>
+          <input type="text" required />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <pre class="no-min-height">
+<code>&lt;form&gt;
+  &lt;input type="text" required /&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+      <div class="el">
+        <form>
+          <input type="text" pattern="[a-zA-Z]{6,8}" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <pre class="no-min-height">
+<code>&lt;form&gt;
+  &lt;input type="text" pattern="[a-zA-Z]{6,8} /&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+      <div class="el">
+        <form>
+          <input type="text" minlength="8" maxlength="12" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <pre>
+<code>&lt;form&gt;
+&lt;input type="text" minlength="8" maxlength="12" /&gt;
+&lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Password ------------------------ -->
+      <h5>Password</h5>
+
+      <div class="el"><input type="password" /></div>
+      <pre
+        class="no-min-height"
+      ><code>&lt;input type="password" /&gt;</code></pre>
+
+      <div class="el"><input type="password" inputmode="numeric" /></div>
+      <pre class="no-min-height">
+<code>&lt;input type="password" inputmode="numeric" /&gt;</code></pre>
+
+      <div class="el">
+        <form>
+          <input
+            type="text"
+            pattern="[a-zA-Z1-90]{8,12}"
+            minlength="8"
+            maxlength="12"
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <pre>
+<code>&lt;form&gt;
+  &lt;input type="text" pattern="[a-zA-Z1-90]{8,12}" minlength="8" maxlength="12" /&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Time ------------------------ -->
+      <h5>Time</h5>
+      <div class="el"><input type="time" /></div>
+      <pre class="no-min-height"><code>&lt;input type="time" /&gt;</code></pre>
+
+      <div class="el"><input type="time" value="13:30:42" step="10" /></div>
+      <pre class="no-min-height">
+<code>&lt;input type="time" value="13:30:42" step="10" /&gt;</code></pre>
+
+      <div class="el"><input type="time" min="13:30" max="15:30" /></div>
+      <pre
+        class="no-min-height"
+      ><code>&lt;input type="time" min="13:30" max="15:30" /&gt;</code></pre>
+
+      <div class="el">
+        <input list="time" type="time" />
+        <datalist id="time">
+          <option value="13:00"></option>
+          <option value="13:30"></option>
+          <option value="14:00"></option>
+          <option value="14:30"></option>
+        </datalist>
+      </div>
+      <pre>
+<code>&lt;input type="time" type="time" /&gt;
+&lt;datalist id="time"&gt;
+  &lt;option value="13:00"&gt;&lt;/option&gt;
+  &lt;option value="13:30"&gt;&lt;/option&gt;
+  &lt;option value="14:00"&gt;&lt;/option&gt;
+  &lt;option value="14:30"&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Date ------------------------ -->
+      <h5>Date</h5>
+      <div class="el"><input type="date" /></div>
+      <pre class="no-min-height"><code>&lt;input type="date" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="date" value="2020-03-21" step="3" />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="date" value="2020-03-21" step="3" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="date" min="2020-01-01" max="2020-04-01" />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="date" min="2020-01-01" max="2020-04-01" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="date" list="date" />
+        <datalist id="date">
+          <option value="2020-03-21"></option>
+          <option value="2020-03-22"></option>
+          <option value="2020-03-23"></option>
+        </datalist>
+      </div>
+      <pre>
+<code>&lt;input type="date" list="date" /&gt;
+&lt;datalist id="date"&gt;
+  &lt;option value="2020-03-21"&gt;&lt;/option&gt;
+  &lt;option value="2020-03-22"&gt;&lt;/option&gt;
+  &lt;option value="2020-03-23"&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Datetime-local ------------------------ -->
+      <h5>Datetime-local</h5>
+
+      <div class="el">
+        <input type="datetime-local" />
+      </div>
+      <pre
+        class="no-min-height"
+      ><code>&lt;input type="datetime-local" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="datetime-local" value="2020-01-13T13:30:15" step="120" />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="datetime-local" value="2020-01-13T13:30:15" step="120" /&gt;</code></pre>
+
+      <div class="el">
+        <input
+          type="datetime-local"
+          min="2020-01-01T13:30"
+          max="2020-01-10T10:30"
+        />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="datetime-local" min="2020-01-01T13:30" max="2020-01-10T10:30" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="datetime-local" list="date-time" />
+        <datalist id="date-time">
+          <option value="2020-01-01T10:21"></option>
+          <option value="2020-01-03T13:30"></option>
+          <option value="2020-01-05T17:40"></option>
+        </datalist>
+      </div>
+      <pre>
+<code>&lt;input type="datetime-local" list="date-time" /&gt;
+&lt;datalist id="date-time"&gt;
+  &lt;option value="2020-01-01T10:21"&gt;&lt;/option&gt;
+  &lt;option value="2020-01-03T13:30"&gt;&lt;/option&gt;
+  &lt;option value="2020-01-05T17:40"&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Week ------------------------ -->
+      <h5>Week</h5>
+
+      <div class="el">
+        <input type="week" />
+      </div>
+      <pre class="no-min-height"><code>&lt;input type="week" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="week" value="2020-W03" step="2" />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="week" value="2020-W03" step="2" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="week" min="2020-W01" max="2020-W05" />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="week" min="2020-W01" max="2020-W05" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="week" list="date-week" />
+        <datalist id="date-week">
+          <option value="2020-W01"></option>
+          <option value="2020-W03"></option>
+          <option value="2020-W07"></option>
+        </datalist>
+      </div>
+      <pre>
+<code>&lt;input type="week" list="date-week" /&gt;
+&lt;datalist id="date-week"&gt;
+  &lt;option value="2020-W01"&gt;&lt;/option&gt;
+  &lt;option value="2020-W03"&gt;&lt;/option&gt;
+  &lt;option value="2020-W07"&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Month ------------------------ -->
+      <h5 class="cell">Month</h5>
+
+      <div class="el">
+        <input type="month" />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="month" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="month" value="2020-03" step="3" />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="month" value="2020-03" step="3" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="month" min="2020-01" max="2020-04" />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="month" min="2020-01" max="2020-04" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="month" list="date-month" />
+        <datalist id="date-month">
+          <option value="2020-01"></option>
+          <option value="2020-03"></option>
+          <option value="2020-07"></option>
+        </datalist>
+      </div>
+      <pre>
+<code>&lt;input type="month" list="date-month"  /&gt;
+&lt;datalist id="date-month"&gt;
+  &lt;option value="2020-01"&gt;&lt;/option&gt;
+  &lt;option value="2020-03"&gt;&lt;/option&gt;
+  &lt;option value="2020-07"&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Email ------------------------ -->
+      <h5>Email</h5>
+      <div class="el">
+        <form>
+          <input type="email" />
+          <button type="submit">submit</button>
+        </form>
+      </div>
+      <pre class="no-min-height">
+<code>&lt;form&gt;
+  &lt;input type="email" /&gt;
+  &lt;button type="submit"&gt;submit&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+
+      <div class="el">
+        <form>
+          <input type="email" multiple />
+          <button type="submit">submit</button>
+        </form>
+      </div>
+      <pre class="no-min-height">
+<code>&lt;form&gt;
+  &lt;input type="email" multiple /&gt;
+  &lt;button type="submit"&gt;submit&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+
+      <div class="el">
+        <input type="email" list="date-email" />
+        <datalist id="date-email">
+          <option value="elon@spacex.com"></option>
+          <option value="elon@boring.com"></option>
+          <option value="elon@tesla.com"></option>
+          <option value="elon@neuralink.com"></option>
+        </datalist>
+      </div>
+
+      <pre>
+<code>&lt;input type="email" list="date-email" /&gt;
+&lt;datalist id="date-email"&gt;
+  &lt;option value="elon@spacex.com"&gt;&lt;/option&gt;
+  &lt;option value="elon@boring.com"&gt;&lt;/option&gt;
+  &lt;option value="elon@tesla.com"&gt;&lt;/option&gt;
+  &lt;option value="elon@neuralink.com"&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Number ------------------------ -->
+      <h5>Number</h5>
+
+      <div class="el">
+        <input type="number" />
+      </div>
+      <pre
+        class="no-min-height"
+      ><code>&lt;input type="number" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="number" value="69" step="0.13" />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="number" value="69" step="0.13" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="number" min="5" max="10" />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="number" min="5" max="10" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="number" list="input-number" />
+        <datalist id="input-number">
+          <option value="4"></option>
+          <option value="13"></option>
+          <option value="69"></option>
+        </datalist>
+      </div>
+      <pre>
+<code>&lt;input type="number" list="input-number" /&gt;
+&lt;datalist id="input-number"&gt;
+  &lt;option value="4"&gt;&lt;/option&gt;
+  &lt;option value="13"&gt;&lt;/option&gt;
+  &lt;option value="69"&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Search ------------------------ -->
+      <h5>Search</h5>
+
+      <div class="el">
+        <input type="search" />
+      </div>
+      <pre
+        class="no-min-height"
+      ><code>&lt;input type="search" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="search" spellcheck="false" />
+      </div>
+      <pre class="no-min-height">
+<code>&lt;input type="search" spellcheck="false" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="search" list="input-search" />
+        <datalist id="input-search">
+          <option value="Sojourner"></option>
+          <option value="Opportunity"></option>
+          <option value="Spirit"></option>
+          <option value="Curiosity"></option>
+          <option value="Perseverance"></option>
+        </datalist>
+      </div>
+      <pre>
+<code>&lt;input type="search" list="input-search" /&gt;
+&lt;datalist id="input-search"&gt;
+  &lt;option value="Sojourner"&gt;&lt;/option&gt;
+  &lt;option value="Opportunity"&gt;&lt;/option&gt;
+  &lt;option value="Spirit"&gt;&lt;/option&gt;
+  &lt;option value="Curiosity"&gt;&lt;/option&gt;
+  &lt;option value="Perseverance"&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Telephone ------------------------ -->
+      <h5>Tel</h5>
+
+      <div class="el">
+        <input type="tel" />
+      </div>
+      <pre class="no-min-height"><code>&lt;input type="tel" /&gt;</code></pre>
+
+      <div class="el">
+        <form>
+          <input
+            type="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="xxx-xxx-xxxx"
+          />
+          <button type="submit">submit</button>
+        </form>
+      </div>
+      <pre>
+<code>&lt;form&gt;
+  &lt;input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" /&gt;
+  &lt;button type="submit"&gt;submit&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+      <div aria-hidden="true" span="row">&nbsp;</div>
+
+      <!-- Url ------------------------ -->
+      <h5>Url</h5>
+      <div class="el">
+        <input type="url" />
+      </div>
+      <pre class="no-min-height"><code>&lt;input type="url" /&gt;</code></pre>
+
+      <div class="el">
+        <input type="url" list="url" />
+      </div>
+      <datalist id="url">
+        <option value="https://mohanvadivel.com/"></option>
+        <option value="http://www.google.com/"></option>
+        <option value="http://w3.org/"></option>
+      </datalist>
+
+      <pre>
+<code>&lt;input type="url" list="url" /&gt;
+&lt;datalist id="url"&gt;
+  &lt;option value="https://mohanvadivel.com/"&gt;&lt;/option&gt;
+  &lt;option value="http://www.google.com/"&gt;&lt;/option&gt;
+  &lt;option value="http://w3.org/"&gt;&lt;/option&gt;
+&lt;/datalist&gt;</code></pre>
+    </main>
+    <div class="debug-grid grid" columns="8">
+      <div style="min-width: 99px">&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div class="lg">&nbsp;</div>
+      <div class="lg">&nbsp;</div>
+      <div class="lg">&nbsp;</div>
+      <div class="lg">&nbsp;</div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/grilles@1.0.3/grille.debug.css" />
+  <script src="https://unpkg.com/grilles@1.0.3/debug.js"></script>
+</html>
