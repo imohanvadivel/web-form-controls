@@ -15,7 +15,7 @@
     "build": "esbuild src/style.css src/script.js --bundle --minify --outdir=./"
   },
   "dependencies": {
-    "grilles": "^1.0.2",
+    "grilles": "^1.0.6",
     "prismjs": "^1.26.0"
   },
   "devDependencies": {
